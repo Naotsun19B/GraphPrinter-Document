@@ -33,6 +33,8 @@ The default shortcut keys that correspond to the added functions are as follows.
 
 |**Shortcut Key**|**Function**|
 |:---:|---|
+|Ctrl + F7|Copy all currently open Graph Editor nodes to the clipboard. (**Windows Only**)|
+|Ctrl + F8|Copy the selected node of the currently open graph editor to the clipboard. (**Windows Only**)|
 |Ctrl + F9|Outputs an image containing all the nodes of the currently open graph editor.|
 |Ctrl + F10|Outputs an image containing the selected nodes in the currently open graph editor.|
 |Ctrl + F11|Restores the nodes contained in the selected png file in the currently open graph editor.|
@@ -68,10 +70,13 @@ The items that can be set from the editor preferences are as follows.
 
 [Naotsun](https://twitter.com/Naotsun_UE)
 
-## History
+## History  
 
-- (2021/05/28) v1.6  
-Changed so that the asset name is included in the file name when the reference viewer is output
+- (2021/07/11) v1.7   
+  Added a shortcut key to copy the image of Graph Editor to the clipboard (**Windows Only**)  
+
+- (2021/05/28) v1.6   
+  Changed so that the asset name is included in the file name when the reference viewer is output
 
 - (2021/05/05) v1.5   
   Corrected the problem that the image output for the first time after starting the engine becomes whitish
