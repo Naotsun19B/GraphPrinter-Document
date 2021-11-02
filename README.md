@@ -2,6 +2,21 @@
 
 ![title](https://user-images.githubusercontent.com/51815450/101246117-93b7aa00-3754-11eb-811c-da38fbbd5b64.PNG)
 
+<!--ts-->
+   * [Description](#Description)
+      * [On the editor](#on-the-editor)
+      * [Output image](#output-image)
+      * [Node restore](#node-restore)
+   * [Requirement](#Requirement)
+   * [Installation](#Installation)
+   * [Usage](#Usage)
+   * [Settings](#Settings)
+   * [Note](#Note)
+   * [License](#License)
+   * [Author](#Author)
+   * [History](#History)
+<!--te-->
+
 ## Description
 
 This plugin adds a shortcut key that prints an Unreal Engine graph editor (such as Blueprint or Material ...) to an image file or copies it to the clipboard.
@@ -19,7 +34,7 @@ You can also restore the node from the output png format image file.
 
 ## Requirement
 
-Target version : UE4.21 ～ 4.26  
+Target version : UE4.21 ～ 4.27 (UE5.0EA) 
 Target platform : Windows, Mac, Linux 
 
 ## Installation
