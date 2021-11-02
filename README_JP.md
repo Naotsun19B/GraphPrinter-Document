@@ -2,6 +2,20 @@
 
 ![title](https://user-images.githubusercontent.com/51815450/101246117-93b7aa00-3754-11eb-811c-da38fbbd5b64.PNG)
 
+<!--ts-->
+   * [概要](#概要)
+      * [エディタ上での状態](#エディタ上での状態)
+      * [出力された画像](#出力された画像)
+      * [ノードの復元](#ノードの復元)
+   * [動作環境](#動作環境)
+   * [インストール](#インストール)
+   * [使い方](#使い方)
+   * [オプション](#オプション)
+   * [ライセンス](#ライセンス)
+   * [作者](#作者)
+   * [履歴](#履歴)
+<!--te-->
+
 ## 概要
 
 このプラグインはUnreal Engineのグラフエディタ(BlueprintやMaterialなど...)を画像ファイルに出力、またはクリップボードにコピーするショートカットキーを追加します。
@@ -19,12 +33,12 @@
 
 ## 動作環境
 
-対象バージョン : UE4.21 ～ 4.26  
+対象バージョン : UE4.21 ～ 4.27 (UE5.0EA)  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
 
-プロジェクトのPluginsフォルダにPlugins/GraphPrinterフォルダを入れてください。  
+プロジェクトのPluginsフォルダに[Plugins/GraphPrinter](https://github.com/Naotsun19B/GraphPrinter)フォルダを入れてください。  
 または、[マーケットプレイス](https://www.unrealengine.com/marketplace/en/product/graph-printer)からインストールしてください。
 
 ## 使い方
