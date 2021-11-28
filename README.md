@@ -11,7 +11,6 @@
    * [Installation](#Installation)
    * [Usage](#Usage)
    * [Settings](#Settings)
-   * [Note](#Note)
    * [License](#License)
    * [Author](#Author)
    * [History](#History)
@@ -86,6 +85,9 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2021/11/28) v1.9   
+  Fixed compilation error in UE 4.27 on Linux environment
 
 - (2021/10/20) v1.8   
   Added support for UE5  
