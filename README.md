@@ -70,6 +70,7 @@ The items that can be set from the editor preferences are as follows.
 |Format|Set the format of the output image. Supported image formats are *png*, *jpeg*, *bmp*, *exr*.|
 |Compression Quality|Set the compression rate of the output image.|
 |Filtering Mode|Sets the texture filtering mode used on output.|
+|Draw Only Graph|Whether to hide the title bar of the graph editor and the text of the graph type in the lower right.|
 |Use Gamma|Set whether to reflect the gamma value in the output image. If *false*, the output image may be darker than you can see in the editor.|
 |Padding|Set the margin when outputting to the image. Increase the value if the node is not included in the output image.|
 |MaxImageSize|Set the maximum size of the output image. If it exceeds this size, it cannot be output.|
@@ -85,6 +86,9 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2021/12/25) v2.0   
+  Added an option to hide the title bar etc. of the graph editor
 
 - (2021/11/28) v1.9   
   Fixed compilation error in UE 4.27 on Linux environment
