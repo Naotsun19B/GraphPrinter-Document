@@ -40,6 +40,7 @@ Target platform : Windows, Mac, Linux
 
 Put the [Plugins/GraphPrinter](https://github.com/Naotsun19B/GraphPrinter) folder in your project's Plugins folder.  
 Or install from the [marketplace](https://www.unrealengine.com/marketplace/en/product/graph-printer).  
+If the feature is not available after installing the plugin, it is possible that the plugin has not been enabled, so please check if the plugin is enabled from Edit > Plugins.
 
 ## Usage
 
