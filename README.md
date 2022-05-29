@@ -1,6 +1,6 @@
 # GraphPrinter
 
-![title](https://user-images.githubusercontent.com/51815450/101246117-93b7aa00-3754-11eb-811c-da38fbbd5b64.PNG)
+![Plugin](https://user-images.githubusercontent.com/51815450/170719311-8dd70514-ef6b-4649-82bd-6be9232ae16e.PNG)
 
 <!--ts-->
    * [Description](#Description)
@@ -20,16 +20,16 @@
 
 This plugin adds a shortcut key that prints an Unreal Engine graph editor (such as Blueprint or Material ...) to an image file or copies it to the clipboard.
 As shown in the image below, you can also output the part that is not displayed in the graph editor to the image file.
-You can also restore the node from the output png format image file.  
+You can also restore the node from the output image file.  
 
 #### On the editor
-![grapheditor](https://user-images.githubusercontent.com/51815450/101246223-50117000-3755-11eb-8966-5da5124d420e.PNG)
+![BeforeExport](https://user-images.githubusercontent.com/51815450/170719166-b02a5526-d052-404c-bb13-d888ad7c080f.PNG)
 
 #### Output image
-![BP_Sky_Sphere-RefreshMaterial](https://user-images.githubusercontent.com/51815450/114880820-60d99d00-9e3d-11eb-92b6-e7ef5b6f4cc3.png)
+![BP_Sky_Sphere-RefreshMaterial](https://user-images.githubusercontent.com/51815450/170719253-f5365b35-e86c-4b1a-ac0a-7b3f425c050f.png)
 
 #### Node restore  
-![restore](https://user-images.githubusercontent.com/51815450/114888626-61c1fd00-9e44-11eb-96e8-602753fa40bd.gif)
+![Restore](https://user-images.githubusercontent.com/51815450/170719064-ed8ef47a-85c5-47b0-b243-951fe4e3e212.gif)
 
 ## Requirement
 
@@ -46,37 +46,40 @@ If the feature is not available after installing the plugin, it is possible that
 
 The default shortcut keys that correspond to the added functions are as follows.
 
-|**Shortcut Key**|**Function**|
-|:---:|---|
-|Ctrl + F7|Copy all currently open Graph Editor nodes to the clipboard. (**Windows Only / Node information cannot be embedded**)|
-|Ctrl + F8|Copy the selected node of the currently open graph editor to the clipboard. (**Windows Only / Node information cannot be embedded**)|
-|Ctrl + F9|Outputs an image containing all the nodes of the currently open graph editor.|
-|Ctrl + F10|Outputs an image containing the selected nodes in the currently open graph editor.|
-|Ctrl + F11|Restores the nodes contained in the selected png file in the currently open graph editor.|
-|Ctrl + F12|Open the output destination directory set in the editor preferences.|
+| **Shortcut Key**　 | 　**Function**                                                                                                           　    　       |
+|:-----------------:|--------------------------------------------------------------------------------------------------------------------------------------|
+|     Ctrl + F7     | Copy all currently open Graph Editor nodes to the clipboard. (**Windows Only / Node information cannot be embedded**)                |
+|     Ctrl + F8     | Copy the selected node of the currently open graph editor to the clipboard. (**Windows Only / Node information cannot be embedded**) |
+|     Ctrl + F9     | Outputs an image containing all the nodes of the currently open graph editor.                                                        |
+|    Ctrl + F10     | Outputs an image containing the selected nodes in the currently open graph editor.                                                   |
+|    Ctrl + F11     | Restores the nodes contained in the selected png file in the currently open graph editor.                                            |
+|    Ctrl + F12     | Open the output destination directory set in the editor preferences.                                                                 |
 
 You can also change the shortcut keys from the keyboard shortcuts in the editor preferences.
 
-![keyconfig2](https://user-images.githubusercontent.com/51815450/114881766-43f19980-9e3e-11eb-9e71-da65bdfa5dbb.PNG)
+![KeyboardShortcuts](https://user-images.githubusercontent.com/51815450/170719363-f04a65c2-d08d-4cef-bc92-80d6703d450b.PNG)
 
 ## Settings
 
-![setting2](https://user-images.githubusercontent.com/51815450/114881742-3d632200-9e3e-11eb-8bab-5db67665dee5.PNG)
+![EditorPreferences](https://user-images.githubusercontent.com/51815450/170719402-052f2f9e-91f3-41ab-9868-5e03bdfc4b31.PNG)
 
 The items that can be set from the editor preferences are as follows.
 
-|**Item**|**Description**|
-|---|---|
-|Is Include Node Info in Image File|Embed node information in the output image file and turn on the function to restore the node from the image file. This feature only supports png format.|
-|Format|Set the format of the output image. Supported image formats are *png*, *jpeg*, *bmp*, *exr*.|
-|Compression Quality|Set the compression rate of the output image.|
-|Filtering Mode|Sets the texture filtering mode used on output.|
-|Draw Only Graph|Whether to hide the title bar of the graph editor and the text of the graph type in the lower right.|
-|Use Gamma|Set whether to reflect the gamma value in the output image. If *false*, the output image may be darker than you can see in the editor.|
-|Padding|Set the margin when outputting to the image. Increase the value if the node is not included in the output image.|
-|MaxImageSize|Set the maximum size of the output image. If it exceeds this size, it cannot be output.|
-|Can Overwrite File when Export|Set whether to overwrite the file with the same name when outputting the image. If *false*, if there is a file with the same name, the suffix will be given number.|
-|Output Directory Path|Set the output destination directory. By default, it is under "[Project]/Saved/GraphPrinter/".|
+| **Section**            | **Item**                           | **Description**                                                                                                                                                                                                              |
+|------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Widget Printer         | Is Include Node Info in Image File | Embed node information in the output image file and turn on the function to restore the node from the image file.                                                                                                            |
+|                        | Format                             | Set the format of the output image. Supported image formats are *png*, *jpeg*, *bmp*, *exr*.                                                                                                                                 |
+|                        | Compression Quality                | Set the compression rate of the output image.                                                                                                                                                                                |
+|                        | Filtering Mode                     | Sets the texture filtering mode used on output.                                                                                                                                                                              |
+|                        | Use Gamma                          | Set whether to reflect the gamma value in the output image. If *false*, the output image may be darker than you can see in the editor.                                                                                       |
+|                        | Max Image Size                     | Set the maximum size of the output image. If it exceeds this size, it cannot be output.                                                                                                                                      |
+|                        | Rendering Scale                    | If the scale for drawing the graph is 0.5, it will be drawn at half the resolution. Decrease the value if you want to draw a graph larger than Max Image Size. Decreasing the value may cause defects in the drawing result. |
+|                        | Can Overwrite File when Export     | Set whether to overwrite the file with the same name when outputting the image. If *false*, if there is a file with the same name, the suffix will be given number.                                                          |
+|                        | Output Directory Path              | Set the output destination directory. By default, it is under "[Project]/Saved/GraphPrinter/".                                                                                                                               |
+| Generic Graph Printer  | Padding                            | Set the margin when outputting to the image. Increase the value if the node is not included in the output image.                                                                                                             |
+|                        | Draw Only Graph                    | Whether to hide the title bar of the graph editor and the text of the graph type in the lower right.                                                                                                                         |
+| Material Graph Printer | Material Graph Export Method       | How to output a graph in the material editor. You can combine the preview viewport with the output image or output it separately.                                                                                            |
+| Editor Extension       | Hide Toolbar Combo Button          | Whether to hide the combo button that performs the function of the plugin in the toolbar of the asset editor.                                                                                                                |
 
 ## License
 
@@ -87,6 +90,11 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2022/05/27) v2.1   
+  Enabled to execute the function from the toolbar or tool menu
+  Added the function to output the preview viewport when outputting the material graph  
+  Significantly improved plugin modules and classes
 
 - (2021/12/25) v2.0   
   Added an option to hide the title bar etc. of the graph editor
