@@ -29,7 +29,7 @@ You can also restore the node from the output image file.
 ![BP_Sky_Sphere-RefreshMaterial](https://user-images.githubusercontent.com/51815450/170719253-f5365b35-e86c-4b1a-ac0a-7b3f425c050f.png)
 
 #### Node restore  
-![Restore](https://user-images.githubusercontent.com/51815450/170719064-ed8ef47a-85c5-47b0-b243-951fe4e3e212.gif)
+https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-bff7-1b7037793517.mp4
 
 ## Requirement
 
