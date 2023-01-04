@@ -91,7 +91,7 @@ The items that can be set from the editor preferences are as follows.
 
 ## History  
 
-- (2021/11/08) v2.2   
+- (2022/11/08) v2.2   
   Added support for UE5.1  
 
 - (2022/05/27) v2.1   
