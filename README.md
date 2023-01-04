@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.21 ～ 5.0  
+Target version : UE4.21 ～ 5.1  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -90,6 +90,9 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2021/11/08) v2.2   
+  Added support for UE5.1  
 
 - (2022/05/27) v2.1   
   Enabled to execute the function from the toolbar or tool menu

@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 動作環境
 
-対象バージョン : UE4.21 ～ 5.0  
+対象バージョン : UE4.21 ～ 5.1  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
@@ -90,6 +90,9 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2021/11/08) v2.2   
+  UE5.1に対応しました  
 
 - (2022/05/27) v2.1   
   ツールバーやツールメニューから機能を実行できるようにしました
