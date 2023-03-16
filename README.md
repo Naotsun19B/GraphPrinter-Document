@@ -10,7 +10,9 @@
    * [Requirement](#Requirement)
    * [Installation](#Installation)
    * [Usage](#Usage)
+     * [Stream Deck](#stream-deck)
    * [Settings](#Settings)
+   * [Note](#Note)
    * [License](#License)
    * [Author](#Author)
    * [History](#History)
@@ -33,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.21 ～ 5.1  
+Target version : UE4.24 ~ 5.1  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -46,18 +48,49 @@ If the feature is not available after installing the plugin, it is possible that
 
 The default shortcut keys that correspond to the added functions are as follows.
 
-| **Shortcut Key**　 | 　**Function**                                                                                                           　    　       |
-|:-----------------:|--------------------------------------------------------------------------------------------------------------------------------------|
-|     Ctrl + F7     | Copy all currently open Graph Editor nodes to the clipboard. (**Windows Only / Node information cannot be embedded**)                |
-|     Ctrl + F8     | Copy the selected node of the currently open graph editor to the clipboard. (**Windows Only / Node information cannot be embedded**) |
-|     Ctrl + F9     | Outputs an image containing all the nodes of the currently open graph editor.                                                        |
-|    Ctrl + F10     | Outputs an image containing the selected nodes in the currently open graph editor.                                                   |
-|    Ctrl + F11     | Restores the nodes contained in the selected png file in the currently open graph editor.                                            |
-|    Ctrl + F12     | Open the output destination directory set in the editor preferences.                                                                 |
+| **Shortcut Key**　 | 　**Function**                                                                                                           　    　     |
+|:-----------------:|------------------------------------------------------------------------------------------------------------------------------------|
+|     Ctrl + F7     | Copies the entire currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**)               |
+|     Ctrl + F8     | Copies the selected part of the currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**) |
+|     Ctrl + F9     | Exports an image containing the entirety of the currently selected widget.                                                         |
+|    Ctrl + F10     | Exports an image containing the selected portion of the currently selected widget.                                                 |
+|    Ctrl + F11     | Restores the state of the widgets contained in the selected image file to the currently selected widget.                           |
+|    Ctrl + F12     | Opens the output destination directory set in the editor preferences.                                                              |
 
-You can also change the shortcut keys from the keyboard shortcuts in the editor preferences.
+You can also change the shortcut keys from the keyboard shortcuts in the editor preferences.  
 
 ![KeyboardShortcuts](https://user-images.githubusercontent.com/51815450/170719363-f04a65c2-d08d-4cef-bc92-80d6703d450b.PNG)
+
+You can also call the function from the tool menu or the asset editor toolbar.  
+
+![ToolMenu](https://user-images.githubusercontent.com/51815450/225569724-e150c60c-631a-4818-bf2a-9c831be2a157.png)
+![Toolbar](https://user-images.githubusercontent.com/51815450/225569744-1befb4bc-12f5-464a-a125-1e5c13aa7967.png)
+
+|     **Category**　      | 　**Item**                                 | **Function**                                                                                                                       |
+|:----------------------:|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+|   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | Copies the entire currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**)               |
+|                        | Copy Selected Area Of Widget To Clipboard | Copies the selected part of the currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**) |
+|  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | Exports an image containing the entirety of the currently selected widget.                                                         |
+|                        | Print Selected Area Of Widget             | Exports an image containing the selected portion of the currently selected widget.                                                 |
+| IMPORT FROM IMAGE FILE | Restore Widget From Image File            | Restores the state of the widgets contained in the selected image file to the currently selected widget.                           |
+|         OTHER          | Open Export Destination Folder            | Opens the output destination directory set in the editor preferences.                                                              |
+|                        | Open Plugin Settings                      | Opens the setting screen for each function.                                                                                        |
+|                        | Install Stream Deck Plugin                | Installs the Graph Printer plugin for Stream Deck into the Stream Deck application.                                                |
+
+### Stream Deck
+
+![StreamDeckApplication](https://user-images.githubusercontent.com/51815450/225564031-6e183445-9777-4c52-80f5-337c8f6e1ad8.PNG)
+
+This plugin supports calling functions from Stream Deck.  
+
+Follow the steps below to use the feature.  
+
+1. Install the Graph Printer plugin for Stream Deck from the Tools menu or `Install Stream Deck Plugin` from the toolbar.  
+2. Place buttons for the functions you want to use in the Stream Deck application.  
+3. Set the server URL to the `Server URL` property of the placed button. (You can leave it as default)  
+4. Set the same server URL as the Stream Deck side in the `Server URL` of `Graph Printer - Remote Control` in the editor preferences. (You can leave it as default)  
+5. You can connect to the Stream Deck by setting `Enable Remote Control` in `Graph Printer - Remote Control` in the editor preferences to `true`.  
+6. Press the button placed from the Stream Deck.  
 
 ## Settings
 
@@ -65,21 +98,31 @@ You can also change the shortcut keys from the keyboard shortcuts in the editor 
 
 The items that can be set from the editor preferences are as follows.
 
-| **Section**            | **Item**                             | **Description**                                                                                                                                                                                                              |
-|------------------------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Widget Printer         | Is Include Widget Info in Image File | Embed widget information in the output image file and turn on the function to restore the widget state from the image file.                                                                                                  |
-|                        | Format                               | Set the format of the output image. Supported image formats are *png*, *jpeg*, *bmp*, *exr*.                                                                                                                                 |
-|                        | Compression Quality                  | Set the compression rate of the output image.                                                                                                                                                                                |
-|                        | Filtering Mode                       | Sets the texture filtering mode used on output.                                                                                                                                                                              |
-|                        | Use Gamma                            | Set whether to reflect the gamma value in the output image. If *false*, the output image may be darker than you can see in the editor.                                                                                       |
-|                        | Max Image Size                       | Set the maximum size of the output image. If it exceeds this size, it cannot be output.                                                                                                                                      |
-|                        | Rendering Scale                      | If the scale for drawing the graph is 0.5, it will be drawn at half the resolution. Decrease the value if you want to draw a graph larger than Max Image Size. Decreasing the value may cause defects in the drawing result. |
-|                        | Can Overwrite File when Export       | Set whether to overwrite the file with the same name when outputting the image. If *false*, if there is a file with the same name, the suffix will be given number.                                                          |
-|                        | Output Directory Path                | Set the output destination directory. By default, it is under "[Project]/Saved/GraphPrinter/".                                                                                                                               |
-| Generic Graph Printer  | Padding                              | Set the margin when outputting to the image. Increase the value if the node is not included in the output image.                                                                                                             |
-|                        | Draw Only Graph                      | Whether to hide the title bar of the graph editor and the text of the graph type in the lower right.                                                                                                                         |
-| Material Graph Printer | Material Graph Export Method         | How to output a graph in the material editor. You can combine the preview viewport with the output image or output it separately.                                                                                            |
-| Editor Extension       | Hide Toolbar Combo Button            | Whether to hide the combo button that performs the function of the plugin in the toolbar of the asset editor.                                                                                                                |
+| **Section**            | **Item**                                 | **Description**                                                                                                                                                                                                              |
+|------------------------|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Widget Printer         | Is Include Widget Info in Image File     | Embed widget information in the output image file and turn on the function to restore the widget state from the image file.                                                                                                  |
+|                        | Format                                   | Set the format of the output image. Supported image formats are *png*, *jpeg*, *bmp*, *exr*.                                                                                                                                 |
+|                        | Compression Quality                      | Set the compression rate of the output image.                                                                                                                                                                                |
+|                        | Filtering Mode                           | Sets the texture filtering mode used on output.                                                                                                                                                                              |
+|                        | Use Gamma                                | Set whether to reflect the gamma value in the output image. If *false*, the output image may be darker than you can see in the editor.                                                                                       |
+|                        | Max Image Size                           | Set the maximum size of the output image. If it exceeds this size, it cannot be output.                                                                                                                                      |
+|                        | Rendering Scale                          | If the scale for drawing the graph is 0.5, it will be drawn at half the resolution. Decrease the value if you want to draw a graph larger than Max Image Size. Decreasing the value may cause defects in the drawing result. |
+|                        | Can Overwrite File when Export           | Set whether to overwrite the file with the same name when outputting the image. If *false*, if there is a file with the same name, the suffix will be given number.                                                          |
+|                        | Output Directory Path                    | Set the output destination directory. By default, it is under "[Project]/Saved/GraphPrinter/".                                                                                                                               |
+| Generic Graph Printer  | Padding                                  | Set the margin when outputting to the image. Increase the value if the node is not included in the output image.                                                                                                             |
+|                        | Draw Only Graph                          | Whether to hide the title bar of the graph editor and the text of the graph type in the lower right.                                                                                                                         |
+| Material Graph Printer | Material Graph Export Method             | How to output a graph in the material editor. You can combine the preview viewport with the output image or output it separately.                                                                                            |
+| Details Panel Printer  | Padding                                  | Height margin when drawing the details view.                                                                                                                                                                                 |
+|                        | Is Include Expansion State In Image File | Whether to embed the expanded state of each item in the image file and restore the expanded state of each item when restoring.                                                                                               |
+|                        | Whether To Also Restore Expanded States  | Whether to also restore the expanded state when restoring.                                                                                                                                                                   |
+| Remote Control         | Enable Remote Control                    | Whether remote control via web socket is enabled. Please check again when the server is rebuilt.                                                                                                                             |
+|                        | ServerURL                                | Your server URL. You can use ws, wss or wss+insecure. Disable remote control once to edit.                                                                                                                                   |
+| Editor Extension       | Hide Toolbar Combo Button                | Whether to hide the combo button that performs the function of the plugin in the toolbar of the asset editor.                                                                                                                |
+
+## Note
+
+・Details panel functionality is not available in engine versions prior to UE5.0.  
+・The menu for installing the Stream Deck plugin will not appear if the Stream Deck application is not installed.  
 
 ## License
 
@@ -90,6 +133,12 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2023/03/16) v2.3  
+  Set icons for each function  
+  Added the ability to call plugin functions from the outside using web sockets  
+  Added export import function for details panel  
+  Enabled to call functions from Stream Deck  
 
 - (2022/11/08) v2.2   
   Added support for UE5.1  

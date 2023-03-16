@@ -10,7 +10,9 @@
    * [動作環境](#動作環境)
    * [インストール](#インストール)
    * [使い方](#使い方)
+      * [Stream Deck](#stream-deck)
    * [オプション](#オプション)
+   * [備考](#備考)
    * [ライセンス](#ライセンス)
    * [作者](#作者)
    * [履歴](#履歴)
@@ -33,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 動作環境
 
-対象バージョン : UE4.21 ～ 5.1  
+対象バージョン : UE4.24 ～ 5.1  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
@@ -48,16 +50,47 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 | **ショートカットキー**　 | 　**機能**                                                              |
 |:--------------:|----------------------------------------------------------------------|
-|   Ctrl + F7    | 現在開いているグラフエディタのすべてのノードをクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**) |
-|   Ctrl + F8    | 現在開いているグラフエディタの選択中のノードをクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**) |
-|   Ctrl + F9    | 現在開いているグラフエディタのすべてのノードを含む画像を出力します。                                   |
-|   Ctrl + F10   | 現在開いているグラフエディタの選択中のノードを含む画像を出力します。                                   |
-|   Ctrl + F11   | 現在開いているグラフエディタに選択したpngファイルに含まれるノードを復元します。                            |
+|   Ctrl + F7    | 現在選択されているウィジェットの全体をクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**)     |
+|   Ctrl + F8    | 現在選択されているウィジェットの選択中の部分をクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**) |
+|   Ctrl + F9    | 現在選択されているウィジェットの全体を含む画像を出力します。                                       |
+|   Ctrl + F10   | 現在選択されているウィジェットの選択中の部分を含む画像を出力します。                                   |
+|   Ctrl + F11   | 現在選択されているウィジェットに選択した画像ファイルに含まれるウィジェットの状態を復元します。                      |
 |   Ctrl + F12   | エディタの環境設定で設定されている出力先のディレクトリを開きます。                                    |
 
 また、ショートカットキーはエディタの環境設定のキーボードショートカットから変更できます。
 
 ![KeyboardShortcuts](https://user-images.githubusercontent.com/51815450/170719363-f04a65c2-d08d-4cef-bc92-80d6703d450b.PNG)
+
+ツールメニューやアセットエディタのツールバーから機能を呼び出すこともできます。  
+
+![ToolMenu](https://user-images.githubusercontent.com/51815450/225569724-e150c60c-631a-4818-bf2a-9c831be2a157.png)
+![Toolbar](https://user-images.githubusercontent.com/51815450/225569744-1befb4bc-12f5-464a-a125-1e5c13aa7967.png)
+
+|       **カテゴリ**　        | 　**項目名**                                  | **機能**                                                               |
+|:----------------------:|-------------------------------------------|----------------------------------------------------------------------|
+|   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | 現在選択されているウィジェットの全体をクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**)     |
+|                        | Copy Selected Area Of Widget To Clipboard | 現在選択されているウィジェットの選択中の部分をクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**) |
+|  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | 現在選択されているウィジェットの全体を含む画像を出力します。                                       |
+|                        | Print Selected Area Of Widget             | 現在選択されているウィジェットの選択中の部分を含む画像を出力します。                                   |
+| IMPORT FROM IMAGE FILE | Restore Widget From Image File            | 現在選択されているウィジェットに選択した画像ファイルに含まれるウィジェットの状態を復元します。                      |
+|         OTHER          | Open Export Destination Folder            | エディタの環境設定で設定されている出力先のディレクトリを開きます。                                    |
+|                        | Open Plugin Settings                      | 各機能の設定画面を開きます。                                                       |
+|                        | Install Stream Deck Plugin                | Stream Deck用のGraph PrinterプラグインをStream Deckアプリケーションにインストールします。       |
+
+### Stream Deck
+
+![StreamDeckApplication](https://user-images.githubusercontent.com/51815450/225564031-6e183445-9777-4c52-80f5-337c8f6e1ad8.PNG)
+
+このプラグインはStream Deckからの機能の呼び出しに対応しています。  
+
+機能を利用するには以下の手順に従ってください。  
+
+1. ツールメニュー、またはツールバーの`Install Stream Deck Plugin`からStream Deck向けのGraph Printerプラグインをインストールします。  
+2. Stream Deckアプリケーションで利用したい機能のボタンを配置します。  
+3. 配置したボタンのプロパティの`Server URL`にサーバーURLを設定します。(デフォルトのままでも可)  
+4. エディタ環境設定の`Graph Printer - Remote Control`の`Server URL`にStream Deck側と同じサーバーURLを設定します。(デフォルトのままでも可)  
+5. エディタ環境設定の`Graph Printer - Remote Control`の`Enable Remote Control`を`true`にすることでStream Deckと接続できます。  
+6. Stream Deckから配置したボタンを押下してください。  
 
 ## オプション
 
@@ -65,21 +98,31 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 エディタの環境設定から設定できる項目は以下の通りです。
 
-| **セクション**      　　      | **項目**                               | **説明**                                                                                                  |
-|------------------------|--------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Widget Printer         | Is Include Widget Info in Image File | 出力する画像ファイルにウィジェットの情報を埋め込み、画像ファイルからウィジェットの状態を復元する機能をオンにします。　                                             |
-|                        | Format                               | 出力する画像の形式を設定します。対応している画像フォーマットは*png*、*jpeg*、*bmp*、*exr*です。                                              |
-|                        | Compression Quality                  | 出力する画像の圧縮率を設定します。                                                                                       |
-|                        | Filtering Mode                       | 出力する際に使用するテクスチャのフィルタリングモードを設定します。                                                                       |
-|                        | Use Gamma                            | 出力する画像にガンマ値を反映するかを設定します。*false*の場合、出力された画像がエディタで見るよりも暗くなる場合があります。                                       |
-|                        | Max Image Size                       | 出力画像の最大サイズを設定します。 このサイズを超えると出力できません。                                                                    |
-|                        | Rendering Scale                      | グラフを描画するための縮尺が0.5の場合、半分の解像度で描画されます。Max Image Sizeよりも大きいグラフを描画する場合は値を小さくします。値を小さくすると描画結果に欠陥が生じる可能性があります。 |
-|                        | Can Overwrite File when Export       | 画像を出力する際に同名のファイルを上書きするかを設定します。*false*の場合、同名のファイルがあった際にはサフィックスに連番が付きます。                                  |
-|                        | Output Directory Path                | 出力先のディレクトリを設定します。デフォルトでは"[Project]/Saved/GraphPrinter/"以下となっています。                                       |
-| Generic Graph Printer  | Padding                              | 画像に出力する際の余白を設定します。ノードが見切れる際などに値を大きくしてください。                                                              |
-|                        | Draw Only Graph                      | グラフエディタのタイトルバーと右下のグラフタイプのテキストを非表示にするかどうかを設定します。                                                         |
-| Material Graph Printer | Material Graph Export Method         | マテリアルグラフを出力する方法。プレビュービューポートを出力画像に結合したり、別々に出力したりできます。                                                    |
-| Editor Extension       | Hide Toolbar Combo Button            | アセットエディタのツールバーでプラグインの機能を実行するコンボボタンを非表示にする場合は*true*にします。                                                 |
+| **セクション**      　　      | **項目**                                   | **説明**                                                                                                  |
+|------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Widget Printer         | Is Include Widget Info in Image File     | 出力する画像ファイルにウィジェットの情報を埋め込み、画像ファイルからウィジェットの状態を復元する機能を有効にします。　                                             |
+|                        | Format                                   | 出力する画像の形式を設定します。対応している画像フォーマットは*png*、*jpeg*、*bmp*、*exr*です。                                              |
+|                        | Compression Quality                      | 出力する画像の圧縮率を設定します。                                                                                       |
+|                        | Filtering Mode                           | 出力する際に使用するテクスチャのフィルタリングモードを設定します。                                                                       |
+|                        | Use Gamma                                | 出力する画像にガンマ値を反映するかを設定します。*false*の場合、出力された画像がエディタで見るよりも暗くなる場合があります。                                       |
+|                        | Max Image Size                           | 出力画像の最大サイズを設定します。 このサイズを超えると出力できません。                                                                    |
+|                        | Rendering Scale                          | グラフを描画するための縮尺が0.5の場合、半分の解像度で描画されます。Max Image Sizeよりも大きいグラフを描画する場合は値を小さくします。値を小さくすると描画結果に欠陥が生じる可能性があります。 |
+|                        | Can Overwrite File when Export           | 画像を出力する際に同名のファイルを上書きするかを設定します。*false*の場合、同名のファイルがあった際にはサフィックスに連番が付きます。                                  |
+|                        | Output Directory Path                    | 出力先のディレクトリを設定します。デフォルトでは"[Project]/Saved/GraphPrinter/"以下となっています。                                       |
+| Generic Graph Printer  | Padding                                  | 画像に出力する際の余白を設定します。ノードが見切れる際などに値を大きくしてください。                                                              |
+|                        | Draw Only Graph                          | グラフエディタのタイトルバーと右下のグラフタイプのテキストを非表示にするかどうかを設定します。                                                         |
+| Material Graph Printer | Material Graph Export Method             | マテリアルグラフを出力する方法。プレビュービューポートを出力画像に結合したり、別々に出力したりできます。                                                    |
+| Details Panel Printer  | Padding                                  | 詳細パネルを画像に出力する際の高さの余白を指定します。 出力画像が見切れる際などに値を大きくしてください。                                                   |
+|                        | Is Include Expansion State In Image File | 各項目の展開状態を画像ファイルに埋め込む機能を有効にします。                                                                          |
+|                        | Whether To Also Restore Expanded States  | 詳細パネルの画像から復元する時に各項目の展開状態も復元する機能を有効にします。                                                                 |
+| Remote Control         | Enable Remote Control                    | Webソケット経由のリモートコントロールを有効にします。サーバーを起動しなおしたりした際には再度有効にしなおしてください。                                           |
+|                        | ServerURL                                | サーバーのURLを設定します。ws、wss、またはwss+insecureを使用できます。                                                           |
+| Editor Extension       | Hide Toolbar Combo Button                | アセットエディタのツールバーでプラグインの機能を実行するコンボボタンを非表示にする場合は*true*にします。                                                 |
+
+## 備考
+
+・詳細パネルに関する機能はUE5.0より前のエンジンバージョンでは利用できません。  
+・Stream DeckプラグインをインストールするメニューはStream Deckのアプリケーションがインストールされていない環境では表示されません。  
 
 ## ライセンス
 
@@ -90,6 +133,12 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2023/03/16) v2.3  
+  各機能に対してアイコンを設定しました  
+  Webソケットを利用して外部からプラグインの機能を呼び出す機能を追加しました  
+  詳細パネルのエクスポート/インポート機能を追加しました  
+  Stream Deckから機能を呼び出せるようにしました  
 
 - (2022/11/08) v2.2   
   UE5.1に対応しました  
