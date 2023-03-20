@@ -121,7 +121,7 @@ The items that can be set from the editor preferences are as follows.
 
 ## Note
 
-・Details panel functionality is not available in engine versions prior to UE5.0.  
+・Features related to the details panel are not available for engine versions prior to UE 5.0 and Mac platforms.  
 ・The menu for installing the Stream Deck plugin will not appear if the Stream Deck application is not installed.  
 
 ## License
