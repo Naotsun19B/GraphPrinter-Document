@@ -66,16 +66,16 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 ![ToolMenu](https://user-images.githubusercontent.com/51815450/225569724-e150c60c-631a-4818-bf2a-9c831be2a157.png)
 ![Toolbar](https://user-images.githubusercontent.com/51815450/225569744-1befb4bc-12f5-464a-a125-1e5c13aa7967.png)
 
-|       **カテゴリ**　        | 　**項目名**                                  | **機能**                                                               |
-|:----------------------:|-------------------------------------------|----------------------------------------------------------------------|
-|   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | 現在選択されているウィジェットの全体をクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**)     |
-|                        | Copy Selected Area Of Widget To Clipboard | 現在選択されているウィジェットの選択中の部分をクリップボードにコピーする。(**Windows限定 / ノード情報の埋め込みは不可**) |
-|  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | 現在選択されているウィジェットの全体を含む画像を出力します。                                       |
-|                        | Print Selected Area Of Widget             | 現在選択されているウィジェットの選択中の部分を含む画像を出力します。                                   |
-| IMPORT FROM IMAGE FILE | Restore Widget From Image File            | 現在選択されているウィジェットに選択した画像ファイルに含まれるウィジェットの状態を復元します。                      |
-|         OTHER          | Open Export Destination Folder            | エディタの環境設定で設定されている出力先のディレクトリを開きます。                                    |
-|                        | Open Plugin Settings                      | 各機能の設定画面を開きます。                                                       |
-|                        | Install Stream Deck Plugin                | Stream Deck用のGraph PrinterプラグインをStream Deckアプリケーションにインストールします。       |
+|       **カテゴリ**　        | 　**項目名**                                  | **機能**                                                         |
+|:----------------------:|-------------------------------------------|----------------------------------------------------------------|
+|   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | 現在選択されているウィジェットの全体をクリップボードにコピーする。                              |
+|                        | Copy Selected Area Of Widget To Clipboard | 現在選択されているウィジェットの選択中の部分をクリップボードにコピーする。                          |
+|  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | 現在選択されているウィジェットの全体を含む画像を出力します。                                 |
+|                        | Print Selected Area Of Widget             | 現在選択されているウィジェットの選択中の部分を含む画像を出力します。                             |
+| IMPORT FROM IMAGE FILE | Restore Widget From Image File            | 現在選択されているウィジェットに選択した画像ファイルに含まれるウィジェットの状態を復元します。                |
+|         OTHER          | Open Export Destination Folder            | エディタの環境設定で設定されている出力先のディレクトリを開きます。                              |
+|                        | Open Plugin Settings                      | 各機能の設定画面を開きます。                                                 |
+|                        | Install Stream Deck Plugin                | Stream Deck用のGraph PrinterプラグインをStream Deckアプリケーションにインストールします。 |
 
 ### Stream Deck
 
@@ -121,8 +121,10 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 備考
 
+・クリップボードへコピーする機能は現在Windowsプラットフォームでのみ利用可能です。また、クリップボードへコピーする際はウィジェットの情報を埋め込むことはできません。  
 ・詳細パネルに関する機能はUE5.0より前のエンジンバージョンとMacのプラットフォームでは利用できません。  
-・Stream DeckプラグインをインストールするメニューはStream Deckのアプリケーションがインストールされていない環境では表示されません。  
+・Stream Deckに関する機能は現在Windowsプラットフォームでのみ利用可能です。  
+・Stream DeckプラグインをインストールするメニューはStream Deckのアプリケーションがインストールされていない環境では表示されません。
 
 ## ライセンス
 

@@ -66,16 +66,16 @@ You can also call the function from the tool menu or the asset editor toolbar.
 ![ToolMenu](https://user-images.githubusercontent.com/51815450/225569724-e150c60c-631a-4818-bf2a-9c831be2a157.png)
 ![Toolbar](https://user-images.githubusercontent.com/51815450/225569744-1befb4bc-12f5-464a-a125-1e5c13aa7967.png)
 
-|     **Category**　      | 　**Item**                                 | **Function**                                                                                                                       |
-|:----------------------:|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-|   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | Copies the entire currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**)               |
-|                        | Copy Selected Area Of Widget To Clipboard | Copies the selected part of the currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**) |
-|  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | Exports an image containing the entirety of the currently selected widget.                                                         |
-|                        | Print Selected Area Of Widget             | Exports an image containing the selected portion of the currently selected widget.                                                 |
-| IMPORT FROM IMAGE FILE | Restore Widget From Image File            | Restores the state of the widgets contained in the selected image file to the currently selected widget.                           |
-|         OTHER          | Open Export Destination Folder            | Opens the output destination directory set in the editor preferences.                                                              |
-|                        | Open Plugin Settings                      | Opens the setting screen for each function.                                                                                        |
-|                        | Install Stream Deck Plugin                | Installs the Graph Printer plugin for Stream Deck into the Stream Deck application.                                                |
+|     **Category**　      | 　**Item**                                 | **Function**                                                                                             |
+|:----------------------:|-------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | Copies the entire currently selected widget to the clipboard.                                            |
+|                        | Copy Selected Area Of Widget To Clipboard | Copies the selected part of the currently selected widget to the clipboard.                              |
+|  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | Exports an image containing the entirety of the currently selected widget.                               |
+|                        | Print Selected Area Of Widget             | Exports an image containing the selected portion of the currently selected widget.                       |
+| IMPORT FROM IMAGE FILE | Restore Widget From Image File            | Restores the state of the widgets contained in the selected image file to the currently selected widget. |
+|         OTHER          | Open Export Destination Folder            | Opens the output destination directory set in the editor preferences.                                    |
+|                        | Open Plugin Settings                      | Opens the setting screen for each function.                                                              |
+|                        | Install Stream Deck Plugin                | Installs the Graph Printer plugin for Stream Deck into the Stream Deck application.                      |
 
 ### Stream Deck
 
@@ -121,7 +121,9 @@ The items that can be set from the editor preferences are as follows.
 
 ## Note
 
+・Copy to clipboard functionality is currently only available on Windows platforms. Also, when copying to the clipboard, widget information cannot be embedded.  
 ・Features related to the details panel are not available for engine versions prior to UE 5.0 and Mac platforms.  
+・Stream Deck functionality is currently only available on Windows platforms.  
 ・The menu for installing the Stream Deck plugin will not appear if the Stream Deck application is not installed.  
 
 ## License
