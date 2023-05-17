@@ -136,6 +136,9 @@ The items that can be set from the editor preferences are as follows.
 
 ## History  
 
+- (2023/05/17) v2.4  
+  Added support for UE5.2  
+
 - (2023/03/16) v2.3  
   Set icons for each function  
   Added the ability to call plugin functions from the outside using web sockets  
