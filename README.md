@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.24 ~ 5.1  
+Target version : UE4.24 ~ 5.2  
 Target platform : Windows, Mac, Linux 
 
 ## Installation

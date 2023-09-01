@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 動作環境
 
-対象バージョン : UE4.24 ～ 5.1  
+対象バージョン : UE4.24 ～ 5.2  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
