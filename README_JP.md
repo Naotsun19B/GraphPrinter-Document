@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 動作環境
 
-対象バージョン : UE4.24 ～ 5.2  
+対象バージョン : UE4.24 ～ 5.3  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
@@ -135,6 +135,10 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2023/09/07) v2.5  
+  エディタ環境設定にあるプラグインの設定を全てのプロジェクト共通で保存されるようにしました  
+  UE5.3に対応しました  
 
 - (2023/05/17) v2.4  
   UE5.2に対応しました  

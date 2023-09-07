@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.24 ~ 5.2  
+Target version : UE4.24 ~ 5.3  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -135,6 +135,10 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2023/09/07) v2.5  
+  Plugin settings in editor preferences are now saved common to all projects  
+  Added support for UE5.3
 
 - (2023/05/17) v2.4  
   Added support for UE5.2  
