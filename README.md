@@ -136,9 +136,13 @@ The items that can be set from the editor preferences are as follows.
 
 ## History  
 
+- (2024/04/24) v2.6   
+  Added support for UE5.4  
+  Copy to clipboard function now works on Mac and Linux  
+
 - (2023/09/07) v2.5  
-  Plugin settings in editor preferences are now saved common to all projects  
   Added support for UE5.3
+  Plugin settings in editor preferences are now saved common to all projects
 
 - (2023/05/17) v2.4  
   Added support for UE5.2  
