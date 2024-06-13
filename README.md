@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.24 ~ 5.3  
+Target version : UE4.24 ~ 5.4  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -48,14 +48,15 @@ If the feature is not available after installing the plugin, it is possible that
 
 The default shortcut keys that correspond to the added functions are as follows.
 
-| **Shortcut Key**　 | 　**Function**                                                                                                           　    　     |
-|:-----------------:|------------------------------------------------------------------------------------------------------------------------------------|
-|     Ctrl + F7     | Copies the entire currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**)               |
-|     Ctrl + F8     | Copies the selected part of the currently selected widget to the clipboard. (**Windows only Node information cannot be embedded**) |
-|     Ctrl + F9     | Exports an image containing the entirety of the currently selected widget.                                                         |
-|    Ctrl + F10     | Exports an image containing the selected portion of the currently selected widget.                                                 |
-|    Ctrl + F11     | Restores the state of the widgets contained in the selected image file to the currently selected widget.                           |
-|    Ctrl + F12     | Opens the output destination directory set in the editor preferences.                                                              |
+| **Shortcut Key**　 | 　**Function**                                                                                                           　    　 |
+|:-----------------:|--------------------------------------------------------------------------------------------------------------------------------|
+|     Ctrl + F6     | Collects widgets supported by any printer from the currently displayed screen.                                                 |
+|     Ctrl + F7     | Copies the entire currently selected widget to the clipboard. (**Node information cannot be embedded**)                        |
+|     Ctrl + F8     | Copies the selected part of the currently selected widget to the clipboard. (**Node information cannot be embedded**)          |
+|     Ctrl + F9     | Exports an image containing the entirety of the currently selected widget.                                                     |
+|    Ctrl + F10     | Exports an image containing the selected portion of the currently selected widget.                                             |
+|    Ctrl + F11     | Restores the state of the widgets contained in the selected image file to the currently selected widget.                       |
+|    Ctrl + F12     | Opens the output destination directory set in the editor preferences.                                                          |
 
 You can also change the shortcut keys from the keyboard shortcuts in the editor preferences.  
 
@@ -68,6 +69,7 @@ You can also call the function from the tool menu or the asset editor toolbar.
 
 |     **Category**　      | 　**Item**                                 | **Function**                                                                                             |
 |:----------------------:|-------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|         TARGET         | Collect Target Widgets                    | Collects widgets supported by any printer from the currently displayed screen.                           |
 |   COPY TO CLIPBOARD    | Copy All Area Of Widget To Clipboard      | Copies the entire currently selected widget to the clipboard.                                            |
 |                        | Copy Selected Area Of Widget To Clipboard | Copies the selected part of the currently selected widget to the clipboard.                              |
 |  EXPORT TO IMAGE FILE  | Print All Area Of Widget                  | Exports an image containing the entirety of the currently selected widget.                               |
@@ -117,11 +119,14 @@ The items that can be set from the editor preferences are as follows.
 |                        | Whether To Also Restore Expanded States  | Whether to also restore the expanded state when restoring.                                                                                                                                                                   |
 | Remote Control         | Enable Remote Control                    | Whether remote control via web socket is enabled. Please check again when the server is rebuilt.                                                                                                                             |
 |                        | ServerURL                                | Your server URL. You can use ws, wss or wss+insecure. Disable remote control once to edit.                                                                                                                                   |
-| Editor Extension       | Hide Toolbar Combo Button                | Whether to hide the combo button that performs the function of the plugin in the toolbar of the asset editor.                                                                                                                |
+| Editor Extension       | Show Sub Menu In Tool Menu               | Whether to display submenus that perform plugin functions in the editor's tools menu.                                                                                                                                        |
+|                        | Show Combo Button In Toolbar             | Whether to show the combo button that performs the function of the plugin in the toolbar of the asset editor.                                                                                                                |
+|                        | Show Combo Button In StatusBar           | Whether to show the combo button that performs the function of the plugin in the editor's status bar.                                                                                                                        |
+|                        | Collect Target Widgets Automatically     | Whether to automatically collect the target widgets when opening any type of menu.                                                                                                                                           |
 
 ## Note
 
-・Copy to clipboard functionality is currently only available on Windows platforms. Also, when copying to the clipboard, widget information cannot be embedded.  
+・When copying to the clipboard, widget information cannot be embedded.  
 ・Features related to the details panel are not available for engine versions prior to UE 5.0 and Mac platforms.  
 ・Stream Deck functionality is currently only available on Windows platforms.  
 ・The menu for installing the Stream Deck plugin will not appear if the Stream Deck application is not installed.  
@@ -139,6 +144,8 @@ The items that can be set from the editor preferences are as follows.
 - (2024/04/24) v2.6   
   Added support for UE5.4  
   Copy to clipboard function now works on Mac and Linux  
+  Added plugin menu to status bar  
+  You can now change whether to display plugin menus in the tool menu, toolbar, and status bar from the editor preferences
 
 - (2023/09/07) v2.5  
   Added support for UE5.3
