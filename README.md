@@ -141,6 +141,10 @@ The items that can be set from the editor preferences are as follows.
 
 ## History  
 
+- (2024/06/25) v2.7  
+  Fixed a bug where plug-in functions could not be used from the menu  
+  Added a function that displays a list of widgets to be processed in the menu and allows you to select which widget to process  
+
 - (2024/04/24) v2.6   
   Added support for UE5.4  
   Copy to clipboard function now works on Mac and Linux  
