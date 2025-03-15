@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 動作環境
 
-対象バージョン : UE4.24 ～ 5.4  
+対象バージョン : UE4.27 ～ 5.5  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
@@ -140,6 +140,10 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2025/03/16) v2.8  
+  UE5.5に対応しました  
+  UE4.26以前のサポートを打ち切りました  
 
 - (2024/06/25) v2.7  
   メニューからプラグインの機能を使用する際に使用できないなどの不具合を修正しました  

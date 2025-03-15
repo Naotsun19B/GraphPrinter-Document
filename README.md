@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.24 ~ 5.4  
+Target version : UE4.27 ~ 5.5  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -140,6 +140,10 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2025/03/16) v2.1  
+  Added support for UE5.5  
+  Support before UE4.26 has been discontinued  
 
 - (2024/06/25) v2.7  
   Fixed a bug where plugin functions could not be used from the menu  
