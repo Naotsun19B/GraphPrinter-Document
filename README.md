@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.27 ~ 5.5  
+Target version : UE4.27 ~ 5.6  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -141,7 +141,11 @@ The items that can be set from the editor preferences are as follows.
 
 ## History  
 
-- (2025/03/16) v2.1  
+- (2025/06/06) v2.9  
+  Added support for UE5.6  
+  Fixed a bug where editor preference was not saved correctly  
+
+- (2025/03/16) v2.8  
   Added support for UE5.5  
   Support before UE4.26 has been discontinued  
 
