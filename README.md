@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.27 ~ 5.6  
+Target version : UE4.27 ~ 5.7  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -127,7 +127,7 @@ The items that can be set from the editor preferences are as follows.
 ## Note
 
 ・When copying to the clipboard, widget information cannot be embedded.  
-・Features related to the details panel are not available for engine versions prior to UE 5.0 and Mac platforms.  
+~~・Features related to the details panel are not available for engine versions prior to UE 5.0 and Mac platforms.~~  
 ・Stream Deck functionality is currently only available on Windows platforms.  
 ・The menu for installing the Stream Deck plugin will not appear if the Stream Deck application is not installed.  
 
@@ -140,6 +140,10 @@ The items that can be set from the editor preferences are as follows.
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2025/11/14) v3.0  
+  Added support for UE5.7  
+  Features related to the details panel are now available for versions prior to UE5.0 and platforms other than Windows  
 
 - (2025/06/06) v2.9  
   Added support for UE5.6  
