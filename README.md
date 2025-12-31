@@ -1,3 +1,8 @@
+![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.7-0e1128?logo=unrealengine&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Fab Standard License (Fab EULA)](https://img.shields.io/badge/license-Fab%20Standard%20License%20%28Fab%20EULA%29-blue)](https://www.fab.com/eula)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/Naotsun_UE?style=social)](https://twitter.com/Naotsun_UE)
+
 # GraphPrinter
 
 ![Plugin](https://user-images.githubusercontent.com/51815450/170719311-8dd70514-ef6b-4649-82bd-6be9232ae16e.PNG)
@@ -133,7 +138,9 @@ The items that can be set from the editor preferences are as follows.
 
 ## License
 
-[MIT License](https://en.wikipedia.org/wiki/MIT_License)
+Source code is available on GitHub under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).  
+The package distributed on Fab is provided under the [Fab Standard License (Fab EULA)](https://www.fab.com/eula).  
+Unless explicitly stated otherwise, all documentation content in this repository is © 2020-2026 Naotsun. All rights reserved.
 
 ## Author
 
