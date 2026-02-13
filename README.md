@@ -148,6 +148,10 @@ Unless explicitly stated otherwise, all documentation content in this repository
 
 ## History  
 
+- (2026/02/13) v3.1  
+  Fixed a bug where the function to restore nodes from images did not work properly in UE5.6 or higher environments  
+  Fixed an issue where the image output for the first time after starting the engine was whitish  
+
 - (2025/11/14) v3.0  
   Added support for UE5.7  
   Features related to the details panel are now available for versions prior to UE5.0 and platforms other than Windows  
