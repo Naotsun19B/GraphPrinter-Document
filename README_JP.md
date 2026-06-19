@@ -1,4 +1,4 @@
-![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.7-0e1128?logo=unrealengine&logoColor=white)
+![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.8-0e1128?logo=unrealengine&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![License: Fab Standard License (Fab EULA)](https://img.shields.io/badge/License-Fab%20Standard%20License%20%28Fab%20EULA%29-blue)](https://www.fab.com/eula)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/Naotsun_UE?style=social)](https://twitter.com/Naotsun_UE)
@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## 動作環境
 
-対象バージョン : UE4.27 ～ 5.7  
+対象バージョン : UE4.27 ～ 5.8  
 対象プラットフォーム : Windows, Mac, Linux 
 
 ## インストール
@@ -134,7 +134,8 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 ・クリップボードへコピーする際はウィジェットの情報を埋め込むことはできません。  
 ~~・詳細パネルに関する機能はUE5.0より前のエンジンバージョンとMacのプラットフォームでは利用できません。~~  
 ・Stream Deckに関する機能は現在Windowsプラットフォームでのみ利用可能です。  
-・Stream DeckプラグインをインストールするメニューはStream Deckのアプリケーションがインストールされていない環境では表示されません。
+・Stream DeckプラグインをインストールするメニューはStream Deckのアプリケーションがインストールされていない環境では表示されません。  
+・UE5.8以降、ショートカットキーがエンジン機能と競合する場合があります。ショートカットキーが動作しない場合はキーボードショートカットの設定を確認してください。  
 
 ## ライセンス
 
@@ -147,6 +148,9 @@ Fabで配布されるパッケージは [Fab Standard License (Fab EULA)](https:
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## 履歴
+
+- (2026/06/19) v3.2  
+  UE5.8に対応しました
 
 - (2026/02/13) v3.1  
   UE5.6以上の環境で画像からノードを復元する機能が正常に動作しない不具合を修正しました  

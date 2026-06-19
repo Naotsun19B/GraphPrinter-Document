@@ -1,4 +1,4 @@
-![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.7-0e1128?logo=unrealengine&logoColor=white)
+![UE Version](https://img.shields.io/badge/Unreal%20Engine-4.27--5.8-0e1128?logo=unrealengine&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![License: Fab Standard License (Fab EULA)](https://img.shields.io/badge/License-Fab%20Standard%20License%20%28Fab%20EULA%29-blue)](https://www.fab.com/eula)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/Naotsun_UE?style=social)](https://twitter.com/Naotsun_UE)
@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/51815450/177288939-0ad344d9-fe39-4e44-
 
 ## Requirement
 
-Target version : UE4.27 ~ 5.7  
+Target version : UE4.27 ~ 5.8  
 Target platform : Windows, Mac, Linux 
 
 ## Installation
@@ -135,6 +135,7 @@ The items that can be set from the editor preferences are as follows.
 ~~・Features related to the details panel are not available for engine versions prior to UE 5.0 and Mac platforms.~~  
 ・Stream Deck functionality is currently only available on Windows platforms.  
 ・The menu for installing the Stream Deck plugin will not appear if the Stream Deck application is not installed.  
+・Since UE5.8, shortcut keys may conflict with engine functions. If the shortcut keys don't work, check your keyboard shortcut settings.  
 
 ## License
 
@@ -147,6 +148,9 @@ Unless explicitly stated otherwise, all documentation content in this repository
 [Naotsun](https://twitter.com/Naotsun_UE)
 
 ## History  
+
+- (2026/06/19) v3.2  
+  Added support for UE5.8  
 
 - (2026/02/13) v3.1  
   Fixed a bug where the function to restore nodes from images did not work properly in UE5.6 or higher environments  
